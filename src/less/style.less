@@ -1,0 +1,100 @@
+//colors
+@primary-color: rgba(17,58,93, 0.95);
+@font-color: rgb(184,184,184);
+@secondary-color: rgb(231,87,55);
+
+* {
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  font-size: 10px;
+}
+body { 
+  background: linear-gradient(rgba(6,39,67,0.6), rgba(6,39,67,0.5)), url('../img/12.JPG');
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  }
+
+.menu {
+  font-size: 1.1em;
+  width: 100%; 
+  height: auto;
+  top: 0; 
+  background-color: rgba(0,0,0,0.9);
+  color: #fff;
+  position: fixed;
+  z-index: 5;
+  margin-bottom: 30px;
+  display: block;
+ }
+
+.link{
+  display: block;
+  // border: 2px solid white;
+  padding: 15px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: @font-color;
+  &:hover{
+    color: @secondary-color;
+  }
+
+}
+
+.container{
+  padding: 2em;
+}
+
+.main{
+  margin-top: 15%;
+}
+
+.section{
+  background-color: @primary-color;
+  margin-bottom: 50px;
+  height: auto;
+  width: 100%;
+  font-size: 2.5em;
+  color: @font-color;
+}
+
+.about-me{
+  font-size: 1em;
+  margin-top: 60px;
+  color: @font-color;
+}
+
+img {
+  height: 250px;
+  border-radius: 100%;
+  padding: 1px;
+  background-color: @secondary-color;
+}
+
+.logo{
+  background-color: #fff;
+  padding: 0;
+  height: 60px;
+  opacity: 0.9;
+  border-radius: 0;
+}
+
+i{ 
+  font-size:3em;
+}
+
+.tech{
+  margin: 35px;
+}
+
+::placeholder {
+  font-size: 18px;
+ }
+
+ input {
+   height: 40px;
+ }
