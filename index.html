@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Hello</title>
+    <title>AD</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,33 +14,45 @@
     <link href='https://fonts.googleapis.com/css?family=Exo:400,900' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    
+    <div id="top"></div>
+
     <div class="menu text-center">
           <div class="container">
             <div class="row">
-              <div class="link col-md-2  col-xs-12">
+                   <div class="link col-md-2  col-xs-12">
+                      <a href="#top">
                     <img class="logo" src="src/img/logo.png" alt="">
+                  </a>  
                   </div>
+            
               <div class="link col-md-2 offset-md-1 col-xs-12">
-                About me
+                <a href="#me">
+                  About me 
+              </a>
               </div>
               <div class="link col-md-2 col-xs-12">
+                <a href="#tech">
                  Technologies
+                </a>
               </div>
               <div class="link col-md-2 col-xs-12">
+                <a href="#projects">
                   Projects
+                </a>
               </div>
               <div class="link col-md-2 col-xs-12">
+                <a href="#contacts">
                 Contacts
+              </a>
               </div>
             </div>
           </div>
     </div>
 
-    <div class="main section">
+    <div class="main section" id="me">
       <div class="container">
-        <div class="row text-center">
-          <div class="col">
+        <div class="row">
+          <div class="col text-center">
               <header>
                   <h1>About me</h1>
                 </header>
@@ -48,7 +60,7 @@
         </div>
         <div class="row about-me">
             <div class="col-lg-4 text-center">
-                <img src="/src/img/4.png" alt="">
+                <img class="my-img" src="/src/img/4.png" alt="">
               </div>
           <div class="col-lg-8 col-xs-12">
               My name is Almaz Dolubaev. I am a Full Stack JavaScript Web Developer. I build complex websites with full frontend and backend all the way from mockup to rollout and work with diverse teams to implement projects.
@@ -59,7 +71,7 @@
         </div>
       </div>
     </div>
-    <div class="section text-center">
+    <div class="section text-center" id="tech">
       <div class="container">
         <div class="row text-center">
           <div class="col">
@@ -68,6 +80,7 @@
             </header>
           </div>
         </div>
+        <br>
         <div class="row tech">
             <div class="col-md-2 col-sm-4">
                 <i class="devicon-javascript-plain colored"></i>
@@ -131,44 +144,85 @@
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="section" id="projects">
       <div class="container">
-        <div class="row">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex vel odit dolorem, esse corporis harum laborum sint molestias, maiores velit iusto dolorum expedita architecto repellat deserunt omnis sapiente quidem. Illo voluptate rerum suscipit, deserunt ipsam, hic unde similique nesciunt maiores natus pariatur saepe quaerat? Ipsum est veritatis consequuntur inventore temporibus neque magnam maxime accusamus deserunt sint, ducimus a rerum nam vel tenetur placeat distinctio, illo aliquam aspernatur nisi ratione. Exercitationem dicta voluptates quae molestias nulla sint ut aut quis. Voluptatibus earum laborum asperiores voluptatum sed odit totam id eligendi assumenda? In, exercitationem voluptate. Soluta est repudiandae quia optio nemo voluptates.</div>
+          <div class="row text-center">
+              <div class="col">
+                <header>
+                  <h1>Projects</h1>
+                </header>
+              </div>
+            </div>
+            <br>
+        <div class="row text-center">
+          <div class="col-lg-4">
+            <a href="https://persona-com.herokuapp.com" target="_blank">
+        <figure class="project-card persona">
+          <figcaption>
+            <h2>Persona</h2>
+            <p>Application that captures an image then matches in AWS Rekognition API. The primary use case is for restaurants and bars to be able to provide more personalized service.
+
+               <br>
+               <br> 
+               Technologies: AWS API, REACT, Mongo DB, Node.js, Express.js, AXIOS, JavaScript, HTML, CSS, Reactstrap, Bulma, GIT, GitHub</p>
+          </figcaption>
+        </figure>
+      </a>
+      </div>
+      <div class="col-lg-4">
+        <a href="https://taskmanager-com.herokuapp.com/" target="_balnk">
+          <figure class="project-card task">
+            <figcaption>
+              <h2>Task Manager</h2>
+              <p>
+                  Task Manager! is an app that lets users input the tasks, Responsible for task, Deadline, Priority and Description.
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                  Technologies: MySQL, Template literal, MVC, Node.js, JavaScript, jQuery, Express.js, AJAX, HTML, CSS</p>
+            </figcaption>
+          </figure>
+        </a>
+        </div>
+        <div class="col-lg-4">
+          <a href="https://animalkingdom.herokuapp.com/" target="_blank">
+            <figure class="project-card pet">
+              <figcaption>
+                <h2>Animal Kingdom</h2>
+                <p>Application matches pets that need homes with people best suited to take care of them!
+                  <br>
+                  <br>
+                  <br>
+                <br>
+                <br>
+                    Technologies: Petfinder API, MySQL, Node.js, JavaScript, jQuery, Express.js, AJAX, HTML, CSS, Bulma, GIT, GitHub</p>
+              </figcaption>
+            </figure>
+          </a>
+          </div>
+      </div>
       </div>
     </div>
-    <div class="section ">
-        <div class="container">
-            <div class="row">
-              <div class="col-md-8 offset-md-2">
-                <a class="anchor" id="scrollcontact"></a>
-                <h1 class="h1odd text-center">Contact</h1>
-                  <form action="src/mail.php" method="POST">
-                  <div class="form-group">
-                    <label for="nameinput">Name</label>
-                    <input type="text" class="form-control" id="nameinput" name="name" placeholder="Name">
-                  </div>
-                  <div class="form-group">
-                    <label for="emailinput">Email Address</label>
-                    <input type="email" class="form-control" id="emailinput" name="email" placeholder="Email address">
-                  </div>
-                  <div class="form-group">
-                    <label for="phoneinput">Phone Number</label>
-                    <input type="tel" class="form-control" id="phoneinput" name="phone" placeholder="Phone number (optional)">
-                  </div>
-                  <div class="form-group">
-                    <label for="messageinput">Message</label>
-                    <textarea class="form-control" id="messageinput" name="message" rows="5" placeholder="Message"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary pull-right">Submit</button>
-                </form>
-                </p>
+    <div class="section contacts" id="contacts">
+        <div class="container text-center">
+            <div class="row ">
+                <div class="col">
+                  <header>
+                    <h1>Contacts</h1>
+                  </header>
+                </div>
               </div>
-              <!--Row-->
-            </div>
-            <!--Col-->
+          <br>
+            <div class="row">
+             <div class="col-md-4"> <a href="https://github.com/varan2030" target="_blank"> <img class="icon" src="src/img/github.png" alt="icon"></a></div>
+             <div class="col-md-4"> <a href="https://www.linkedin.com/in/dolubaev/" target="_blank"> <img class="icon" src="src/img/in.png" alt="icon"></a></div>
+             <div class="col-md-4"> <a href="mailto:almaz.dolubaev@gmail.com?Subject=New%20Opportunities"> <img class="icon" src="src/img/mail.png" alt="icon"></a></div>
+
+          </div><!-- /.container -->
           </div>
-    </div>
- 
+ </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
