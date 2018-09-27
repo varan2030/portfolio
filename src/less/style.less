@@ -19,6 +19,9 @@ body {
   background-size:  cover;
   }
 
+a {
+  color: inherit;
+}
 .menu {
   font-size: 1.1em;
   width: 100%; 
@@ -102,7 +105,6 @@ i{
 figure {
   width: 300px;
   height: 300px;
-  background-color: @secondary-color;
   color:@font-color;
   display: inline-flex;
   justify-content: center;
@@ -111,11 +113,11 @@ figure {
   position: relative;
 }
 figure h2 {
-  transition: 0.2s;
+  transition: 0.3s;
   transform: translateY(20px);
 }
 figure p {
-  transition: 0.2s;
+  transition: 0.3s;
   transform: translateY(-20px);
   opacity: 0;
   visibility: hidden;
@@ -129,10 +131,30 @@ figure:before {
   left: 5%;
   border-top: solid 2px;
   border-bottom: solid 2px;
-  transition: 0.2s;
+  transition: 0.3s;
   transform: scaleX(0);
 }
 
+.persona{
+  background: linear-gradient(rgba(6,39,67,0.3), rgba(6,39,67,0.5)), url('../img/face.jpg');
+}
+
+.task{
+  background: linear-gradient(rgba(6,39,67,0.3), rgba(6,39,67,0.5)), url('../img/task.jpg');
+ 
+}
+
+.pet{
+  background: linear-gradient(rgba(6,39,67,0.3), rgba(6,39,67,0.5)), url('../img/pet.jpg');
+}
+
+.project-card{
+  background-size: 300px;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 6%;
+  margin: 20px;
+}
 
 figure:after {
   content: '';
@@ -143,7 +165,7 @@ figure:after {
   left: 5%;
   border-left: solid 2px;
   border-right: solid 2px;
-  transition: 0.2s;
+  transition: 0.3s;
   transform: scaleY(0);
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
@@ -152,6 +174,8 @@ figure:after {
 figure:hover:before, 
 figure:hover:after{
   transform: scale(1);
+  background: linear-gradient(rgba(6,39,67,0.2), rgba(6,39,67,0.5));
+ 
 }
 
 figure:hover h2, 
@@ -159,4 +183,13 @@ figure:hover p {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
+}
+
+a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
+form{
+  font-size: 20px;
 }
